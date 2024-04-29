@@ -2,7 +2,7 @@ export async function getUser(inputEmail: string)
 {
     try
     {
-        const fetchedData = await fetch('http://localhost:3000/api/getUser',{
+        const fetchedData = await fetch('http://cwd-randomizer-v2-two.vercel.app/api/getUser',{
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({email:inputEmail})
@@ -21,7 +21,7 @@ export async function registerUser(user:Object)
 {
     try
     {
-        const res = await fetch('http://localhost:3000/api/register',
+        const res = await fetch('http://cwd-randomizer-v2-two.vercel.app/api/register',
         {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
