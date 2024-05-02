@@ -1,6 +1,6 @@
 'use client'
 import { signIn } from "next-auth/react";
-import { FormEvent,useState } from "react";
+import { FormEvent, useState } from "react";
 import { useRouter } from "next/navigation";
 
 export function LoginForm() {
@@ -10,21 +10,19 @@ export function LoginForm() {
   async function handleSubmit(e:FormEvent<HTMLFormElement>)
   {
       e.preventDefault();
-
-      console.log('Executing handleSubmit function...', data);
       try
       {
         const response = await signIn("credentials", {email: data.email, password: data.password, redirect:false}); 
         if(response?.error)
         {
-          setError('Invalid credentials');
+          setError('INVALID CREDENTIALS');
           return;
         }
-        router.push('/dashboard');
+        router.push('/pages/dashboard'); //Redirecting the user to the dashboard after the successful signIn.
       }
       catch (error)
       {
-        console.log('Something went wrong!');
+        setError('Something went wrong!');
       }
   }
   function handleInput(e:any)
@@ -34,14 +32,11 @@ export function LoginForm() {
   return (
     <>
       <form onSubmit={handleSubmit} >
-        <label> Email <input name="email" type="email" onChange={handleInput}/> </label>
-        <label>
-          Password
-          <input name="password" type="password"  onChange={handleInput}/>
-        </label>
-        <button>Sign In</button>
+        <input name="email" className='email' type="email" placeholder="Email" onChange={handleInput}/>
+        <input name="password" className='password' type="password" placeholder="Password" onChange={handleInput}/>
+        <button><span>LOGIN</span></button>
       </form>
-      {error && <h1>{error}</h1>}
+      {error && <h1 className='error-message'>{error}</h1>}
     </>
   );
 }

@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+.analytics-container
+{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 100px 0px 100px;
+}
+
+.analytics-container .winner,.event,.recent
+{
+    display: flex;
+    background-color: #c4b390;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 25px 10px 25px;
+    border-radius: 10px;
+
+}
+.analytics-container > div > .img-container
+{
+    margin-right: 10px;
+}
+.analytics-container .winner > .img-container
+{
+    background-color: #608b50;
+    border-radius: 50%;
+    padding: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.analytics-container .event > .img-container
+{
+    background-color: #608b50;
+    border-radius: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.analytics-container .recent > .img-container
+{
+    background-color: #608b50;
+    border-radius: 50%;
+    padding: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.analytics-container >  div > .description{
+    flex-direction: column;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Barlow", sans-serif
+}
+.analytics-container >  div > .description > .description-title
+{
+    font-weight:700;
+    font-size: 20px;
+}
+.analytics-container >  div > .description > .sub-text
+{
+    font-weight:400;
+}

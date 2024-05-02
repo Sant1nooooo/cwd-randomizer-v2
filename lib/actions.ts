@@ -1,3 +1,5 @@
+import { signIn } from "@/auth";
+
 export async function getUser(inputEmail: string)
 {
     try
@@ -21,7 +23,7 @@ export async function registerUser(user:Object)
 {
     try
     {
-        const res = await fetch('https://cwd-randomizer-v2-two.vercel.app/api/register',
+        const res = await fetch('https://cwd-randomizer-v2-two.vercel.app/api/register', //cwd-randomizer-v2-two.vercel.app
         {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },

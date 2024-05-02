@@ -7,7 +7,7 @@ export function RegisterForm()
 {
     const [message, setMessage] = useState('');
     const [data, setData] = useState({email: '', username: '', password:''});
-    if(message === "User successfully created!") redirect('/login')
+    if(message === "User successfully created!") redirect('/')
     function handleTextInput(e:any)
     {
         setData({...data, [e.target.name]: e.target.value});

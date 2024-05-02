@@ -1,0 +1,99 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body
+{
+    background-color: hsla(43, 59%, 81%, 1);
+    height: 100vh;
+    width: 100%;
+}
+nav
+{
+    /* border: 1px solid black; */
+    padding: 20px 0px 0px 20px;
+    font-size: 25px;
+    color: #7b6c5d;
+    display: flex;
+    align-items: center;
+    font-family: Cy Grotesk;
+    font-weight: 600;
+}
+nav img
+{
+    margin-right: 15px;
+}
+.login-content
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 100px;
+}
+.login-content form
+{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.login-content form .email
+{
+    height: 64px;
+    width: 480px;
+    text-align: center;
+    font-size: 25px;
+    border-radius: 20px;
+    background-color: #D5C4A1;
+    margin-bottom: 20px;
+    font-weight: 600;
+    
+    border: 1px solid #ccc;
+    padding: 5px;
+    outline: 3px solid black;
+    box-shadow: inset 0px 4px 0px 0px #928374;
+}
+.login-content form .password
+{
+    height: 64px;
+    width: 480px;
+    text-align: center;
+    font-size: 25px;
+    border-radius: 20px;
+    background-color: #D5C4A1;
+    font-weight: 600;
+    margin-bottom: 20px;
+
+    border: 1px solid #ccc;
+    padding: 5px;
+    outline: 3px solid black;
+    box-shadow: inset 0px 4px 0px 0px #928374;
+}
+.login-content form button
+{
+    height: 64px;
+    width: 480px;
+    text-align: center;
+    font-size: 25px;
+    border-radius: 20px;
+    background-color: #D5C4A1;
+    margin-bottom: 20px;
+    background-color: #FABD2F;
+    cursor: pointer;
+
+    border: 1px solid #ccc;
+    padding: 5px;
+    outline: 3px solid black;
+
+}
+.login-content form button span
+{
+    color: white;
+    font-weight: 600;
+    -webkit-text-stroke: 2px #D79921;
+}
+.login-content .error-message{
+    color: red;
+}

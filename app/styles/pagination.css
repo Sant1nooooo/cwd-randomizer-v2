@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+.pagination-header-container
+{
+    margin-top: 30px;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 50px;
+}
+
+.pagination-header-container .header-container-title
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pagination-header-container .header-container-title p
+{
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    color: red;
+}
+.pagination-header-container .search-container
+{
+    justify-content: space-between;
+    border: 2px solid black;
+    align-items: center;
+    border-radius: 8px;
+    padding: 15px 30px;
+    display: flex;
+    height: 30px;
+    width: 465px;
+}
+.pagination-header-container .search-container .search-icon,.filter-icon
+{
+    cursor: pointer;
+}
+.pagination-header-container .search-container input
+{
+    font-family: "Roboto", sans-serif;
+    background-color: transparent;
+    margin-left: 20px;
+    font-weight: 400;
+    font-size: 20px;
+    height: 100%;
+    border: none;
+    flex:1;
+}
+.pagination-header-container .search-container input:focus{
+    outline:none;
+}
